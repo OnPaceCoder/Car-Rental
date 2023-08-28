@@ -35,3 +35,14 @@ export interface CarDetailsProps {
   closeModel: () => void;
   car: CarProps;
 }
+
+export interface FilterProps {
+  manufacturer: string;
+  model: string;
+  fuel: string;
+  limit: number;
+  year: number;
+}
+export interface HomeProps {
+  searchParams: FilterProps;
+}
